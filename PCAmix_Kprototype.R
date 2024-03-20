@@ -1,3 +1,12 @@
+library(haven)
+library(foreign)
+library(PCAmixdata)
+library(clustMixType)
+library(ggplot2)
+library(ggforce)
+
+set.seed(030420233)
+
 split <- splitmix(urbanset)
 pcamix <- PCAmix(X.quanti=split$X.quanti,
                  X.quali=split$X.quali,
