@@ -5,23 +5,6 @@ urban_PA_apu_METhours$zygocity=NULL
 rownames(urban_PA_apu_METhours)<-urban_PA_apu_METhours[, 1]
 urban_PA_apu_METhours <-urban_PA_apu_METhours[,-1]
 
-#urban_PA_apu_METhours$built_isa_300=NULL
-#urban_PA_apu_METhours$built_isa_500=NULL
-#urban_PA_apu_METhours$count_pocketparks_500=NULL
-#urban_PA_apu_METhours$count_pocketparks_800=NULL
-#urban_PA_apu_METhours$ints_300=NULL
-#urban_PA_apu_METhours$ints_500=NULL
-#urban_PA_apu_METhours$length_streets_500=NULL
-#urban_PA_apu_METhours$msavi_5yrs_all_300=NULL
-#urban_PA_apu_METhours$msavi_5yrs_all_500=NULL
-#urban_PA_apu_METhours$msavi_5yrs_greenest_300=NULL
-#urban_PA_apu_METhours$msavi_5yrs_greenest_500=NULL
-#urban_PA_apu_METhours$ndvi_5yrs_all_300=NULL
-#urban_PA_apu_METhours$ndvi_5yrs_all_500=NULL
-#urban_PA_apu_METhours$ndvi_5yrs_greenest_500=NULL
-#urban_PA_apu_METhours$sumarea_pocketparks_500=NULL
-#urban_PA_apu_METhours$sumarea_pocketparks_800=NULL
-
 label=urban_PA_apu_METhours$log_apu_METhours
 urban_PA_apu_METhours$log_apu_METhours=NULL
 
