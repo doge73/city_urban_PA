@@ -11,7 +11,7 @@ library(readr)
 library(reshape)
 library(tidyr)
 
-
+set.seed(0305202421)
 searchGridSubCol <- expand.grid(eta = c(0.005, 0.01, 0.015, 0.02, 0.025),
                                 gamma =c(0,1,2),
                                 max_depth = c(2L,3L,4L,5L), 
