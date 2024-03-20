@@ -1,3 +1,23 @@
+library(haven)
+library(caret)
+library(xgboost)
+library(ggplot2)
+library(shapviz)
+library(Ckmeans.1d.dp)
+library(ggpubr)
+library(dplyr)
+library(SHAPforxgboost)
+library(readr)
+library(reshape)
+library(tidyr)
+
+
+searchGridSubCol <- expand.grid(eta = c(0.005, 0.01, 0.015, 0.02, 0.025),
+                                gamma =c(0,1,2),
+                                max_depth = c(2L,3L,4L,5L), 
+                                subsample = c(0.25, 0.5, 0.75),
+                                min_child_weight = c(0,0.5,1))
+
 
 urban_PA_apu_METhours  <- data.frame(read_csv("apu_METhours_ML.csv"))
 urban_PA_apu_METhours$zygocity=NULL
